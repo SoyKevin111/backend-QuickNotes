@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "note_entity")
+@Table(name = "note")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -17,7 +17,9 @@ public class NoteEntity {
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    Long id;
    @Column(name = "name")
-   String name;
-   @Column(name = "description",columnDefinition = "TEXT")
+   String title;
+   @Column(name = "emoji_ref")
+   String emojiRef;
+   @Column(name = "description", columnDefinition = "TEXT")
    String description;
 }

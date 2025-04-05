@@ -11,6 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Note {
    Long id;
-   String name;
+   String title;
+   String emojiRef;
    String description;
 }
