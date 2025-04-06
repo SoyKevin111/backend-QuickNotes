@@ -9,14 +9,17 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(originPatterns = {"http://localhost:4200"},
+methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
 @RestController
-@RequestMapping("/notes")
+@RequestMapping("/entity/request")
 public class NoteController {
 
    @Autowired
    INoteUseCase noteUseCase;
 
-   @PostMapping
+
+   @PostMapping("/notes")
    public ResponseEntity<?> create(@RequestBody NoteRequest noteRequest){
       Note note =  this.noteUseCase.create(noteRequest);
       if(note != null){
@@ -25,7 +28,8 @@ public class NoteController {
       return ResponseEntity.badRequest().build();
    }
 
-   @GetMapping
+
+   @GetMapping("/notes")
    public List<Note> findAll(){
       return this.noteUseCase.findAll();
    }
