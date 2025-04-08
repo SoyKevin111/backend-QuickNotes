@@ -46,7 +46,12 @@ public class QuickNotesApplication {
 			noteEntity5.setDescription("Discutir proyectos nuevos");
 			noteEntity5.setEmojiRef("Trabajo");
 
-			noteRepository.saveAll(List.of(noteEntity1, noteEntity2, noteEntity3, noteEntity4, noteEntity5));
+			NoteEntity noteEntity6 = new NoteEntity();
+			noteEntity6.setTitle("Reunión de gamer");
+			noteEntity6.setDescription("Programar Juegos");
+			noteEntity6.setEmojiRef("Gamer");
+
+			noteRepository.saveAll(List.of(noteEntity1, noteEntity2, noteEntity3, noteEntity4, noteEntity5, noteEntity6));
 		};
 	}
 
