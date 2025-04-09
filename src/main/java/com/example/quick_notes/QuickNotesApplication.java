@@ -24,27 +24,27 @@ public class QuickNotesApplication {
 			NoteEntity noteEntity1 = new NoteEntity();
 			noteEntity1.setTitle("Tarea para la casa");
 			noteEntity1.setDescription("lorem ipsum dor, pon mas");
-			noteEntity1.setEmojiRef("Cansado");
+			noteEntity1.setEmojiRef("Study");
 
 			NoteEntity noteEntity2 = new NoteEntity();
 			noteEntity2.setTitle("Comprar víveres");
 			noteEntity2.setDescription("Arroz, frijoles, leche");
-			noteEntity2.setEmojiRef("Animado");
+			noteEntity2.setEmojiRef("Food");
 
 			NoteEntity noteEntity3 = new NoteEntity();
 			noteEntity3.setTitle("Estudiar Java");
 			noteEntity3.setDescription("Repasar clases y métodos");
-			noteEntity3.setEmojiRef("Libros");
+			noteEntity3.setEmojiRef("Code");
 
 			NoteEntity noteEntity4 = new NoteEntity();
 			noteEntity4.setTitle("Hacer ejercicio");
 			noteEntity4.setDescription("Correr 5km");
-			noteEntity4.setEmojiRef("Esfuerzo");
+			noteEntity4.setEmojiRef("Sport");
 
 			NoteEntity noteEntity5 = new NoteEntity();
 			noteEntity5.setTitle("Reunión de trabajo");
 			noteEntity5.setDescription("Discutir proyectos nuevos");
-			noteEntity5.setEmojiRef("Trabajo");
+			noteEntity5.setEmojiRef("Work");
 
 			NoteEntity noteEntity6 = new NoteEntity();
 			noteEntity6.setTitle("Reunión de gamer");
