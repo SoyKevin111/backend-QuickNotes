@@ -7,7 +7,8 @@ import java.util.Optional;
 
 public interface INoteRepository {
    Note save(Note note);
-   Optional<Note> findById(Note note);
+   Optional<Note> findById(Long id);
    void deleteById(Long id);
    List<Note> findAll();
+   boolean existsNoteByTitle(String title);
 }

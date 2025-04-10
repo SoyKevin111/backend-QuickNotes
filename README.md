@@ -6,5 +6,6 @@
 
 ### Avances
 ![getnotes](src/main/resources/assets/avances-img/create-note-angular-spring.gif)
+![getnotes](src/main/resources/assets/avances-img/duplicated-title-catch.png)
 
 

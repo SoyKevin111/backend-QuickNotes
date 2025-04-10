@@ -10,6 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Note {
+
    Long id;
    String title;
    String emojiRef;

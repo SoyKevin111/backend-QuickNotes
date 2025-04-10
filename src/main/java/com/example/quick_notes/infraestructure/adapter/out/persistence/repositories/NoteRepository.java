@@ -26,19 +26,25 @@ public class NoteRepository implements INoteRepository {
    }
 
    @Override
-   public Optional<Note> findById(Note note) {
-      return Optional.empty();
+   public Optional<Note> findById(Long id) {
+      return this.noteRepository.findById(id).map(noteEntity -> this.mapper.toDomain(noteEntity));
    }
 
    @Override
    public void deleteById(Long id) {
-
+      this.noteRepository.deleteById(id);
    }
+
    @Override
    public List<Note> findAll() {
       return ((List<NoteEntity>) this.noteRepository.findAll())
          .stream().map(noteEntity ->
             this.mapper.toDomain(noteEntity)
          ).toList();
+   }
+
+   @Override
+   public boolean existsNoteByTitle(String title) {
+      return this.noteRepository.existsByTitle(title);
    }
 }
