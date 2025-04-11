@@ -15,10 +15,10 @@ public class HandlerExceptionController {
    //Para errores de Dominio
    @ExceptionHandler(DomainValidationException.class)
    public ResponseEntity<Map<String, Object>> globalDomainException(DomainValidationException ex) {
-      String message = "[Domain Error]";
+      String type = "[Domain Error]";
       Map<String, Object> response = Map.of(
          "status", ex.getStatus().toString(),
-         "message", message,
+         "type", type,
          "errors", ex.getErrors()
       );
       return ResponseEntity
@@ -29,10 +29,10 @@ public class HandlerExceptionController {
    //Para errores de Entrada
    @ExceptionHandler(RequestValidationException.class)
    public ResponseEntity<Map<String, Object>> globalDomainException(RequestValidationException ex) {
-      String message = "[Input Error]";
+      String type = "[Input Error]";
       Map<String, Object> response = Map.of(
          "status", ex.getStatus().toString(),
-         "message", message,
+         "type", type,
          "errors", ex.getErrors()
       );
       return ResponseEntity
@@ -57,7 +57,7 @@ public class HandlerExceptionController {
 /*
 {
   "status": "BAD_REQUEST",
-  "message": "[Domain Error]",
+  "type": "[Domain Error]",
   "errors": [
     "Error 1",
     "Error 2"

@@ -1,4 +1,4 @@
-package com.example.quick_notes.domain;
+package com.example.quick_notes.domain.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class NoteRequest {
+public class CreateNoteRequest {
    String title;
    String emojiRef;
    String description;
