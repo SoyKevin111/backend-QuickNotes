@@ -55,7 +55,12 @@ public class NoteUseCase implements INoteUseCase {
 
    @Override
    public void deleteById(Long id) {
-
+      Note note = this.noteValidatorUseCase.validateNoteByIdExistence(id); //existence
+      try {
+         this.noteRepository.deleteById(id);
+      } catch (Exception ex) {
+         throw new RuntimeException(""); //excepcion generica del servidor.
+      }
    }
 
    @Override

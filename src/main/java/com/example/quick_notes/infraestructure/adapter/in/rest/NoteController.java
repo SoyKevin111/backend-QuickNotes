@@ -38,6 +38,11 @@ public class NoteController {
       return ResponseEntity.badRequest().build();
    }
 
+   @DeleteMapping("/notes/{id}")
+   public void delete(@PathVariable Long id) {
+      this.noteUseCase.deleteById(id);
+   }
+
 
    @GetMapping("/notes")
    public List<Note> findAll() {
