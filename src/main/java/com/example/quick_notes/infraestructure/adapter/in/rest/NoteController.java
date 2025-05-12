@@ -1,9 +1,9 @@
 package com.example.quick_notes.infraestructure.adapter.in.rest;
 
 import com.example.quick_notes.domain.Note;
-import com.example.quick_notes.domain.request.CreateNoteRequest;
+import com.example.quick_notes.infraestructure.adapter.in.dto.CreateNoteRequest;
 import com.example.quick_notes.domain.port.in.usecases.INoteUseCase;
-import com.example.quick_notes.domain.request.UpdateNoteRequest;
+import com.example.quick_notes.infraestructure.adapter.in.dto.UpdateNoteRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

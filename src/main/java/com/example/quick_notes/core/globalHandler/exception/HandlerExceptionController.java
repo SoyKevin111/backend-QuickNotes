@@ -1,7 +1,7 @@
-package com.example.quick_notes.globalHandler.exception;
+package com.example.quick_notes.core.globalHandler.exception;
 
-import com.example.quick_notes.globalHandler.exception.model.DomainValidationException;
-import com.example.quick_notes.globalHandler.exception.request.RequestValidationException;
+import com.example.quick_notes.core.globalHandler.exception.model.DomainValidationException;
+import com.example.quick_notes.core.globalHandler.exception.request.RequestValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

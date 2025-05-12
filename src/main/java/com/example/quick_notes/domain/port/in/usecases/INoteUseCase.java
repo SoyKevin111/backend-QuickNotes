@@ -1,8 +1,8 @@
 package com.example.quick_notes.domain.port.in.usecases;
 
 import com.example.quick_notes.domain.Note;
-import com.example.quick_notes.domain.request.CreateNoteRequest;
-import com.example.quick_notes.domain.request.UpdateNoteRequest;
+import com.example.quick_notes.infraestructure.adapter.in.dto.CreateNoteRequest;
+import com.example.quick_notes.infraestructure.adapter.in.dto.UpdateNoteRequest;
 
 import java.util.List;
 import java.util.Optional;

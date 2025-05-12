@@ -2,10 +2,10 @@ package com.example.quick_notes.application.usecases;
 
 import com.example.quick_notes.application.validation.NoteValidatorUseCase;
 import com.example.quick_notes.domain.Note;
-import com.example.quick_notes.domain.request.CreateNoteRequest;
+import com.example.quick_notes.infraestructure.adapter.in.dto.CreateNoteRequest;
 import com.example.quick_notes.domain.port.in.usecases.INoteUseCase;
 import com.example.quick_notes.domain.port.out.INoteRepository;
-import com.example.quick_notes.domain.request.UpdateNoteRequest;
+import com.example.quick_notes.infraestructure.adapter.in.dto.UpdateNoteRequest;
 import com.example.quick_notes.domain.validation.request.NoteRequestValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

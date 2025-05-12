@@ -1,6 +1,6 @@
-package com.example.quick_notes.globalHandler.exception.model;
+package com.example.quick_notes.core.globalHandler.exception.model;
 
-import com.example.quick_notes.globalHandler.exception.HandlerException;
+import com.example.quick_notes.core.globalHandler.exception.HandlerException;
 import org.springframework.http.HttpStatus;
 
 import java.util.List;

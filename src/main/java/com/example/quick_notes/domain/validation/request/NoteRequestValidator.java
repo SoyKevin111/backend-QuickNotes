@@ -1,7 +1,7 @@
 package com.example.quick_notes.domain.validation.request;
 
-import com.example.quick_notes.domain.request.CreateNoteRequest;
-import com.example.quick_notes.globalHandler.exception.request.RequestValidationException;
+import com.example.quick_notes.infraestructure.adapter.in.dto.CreateNoteRequest;
+import com.example.quick_notes.core.globalHandler.exception.request.RequestValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 

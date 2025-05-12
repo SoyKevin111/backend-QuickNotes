@@ -2,7 +2,7 @@ package com.example.quick_notes.application.validation;
 
 import com.example.quick_notes.domain.Note;
 import com.example.quick_notes.domain.port.out.INoteRepository;
-import com.example.quick_notes.globalHandler.exception.request.RequestValidationException;
+import com.example.quick_notes.core.globalHandler.exception.request.RequestValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;

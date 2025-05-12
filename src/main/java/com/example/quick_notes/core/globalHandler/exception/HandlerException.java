@@ -1,4 +1,4 @@
-package com.example.quick_notes.globalHandler.exception;
+package com.example.quick_notes.core.globalHandler.exception;
 
 import org.springframework.http.HttpStatus;
 
